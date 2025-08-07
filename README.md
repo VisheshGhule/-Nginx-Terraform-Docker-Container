@@ -51,22 +51,30 @@ resource "docker_container" "nginx" {
 ```
 <img width="491" height="343" alt="Screenshot from 2025-08-07 13-18-33" src="https://github.com/user-attachments/assets/02db3dac-fbce-49ff-8ba2-80d73d9d4f3f" />
 
+---
+
 ### Step 2: Install Terraform
 ```bash
 sudo snap install terraform --classic
 ```
 <img width="857" height="100" alt="Screenshot from 2025-08-07 14-31-39" src="https://github.com/user-attachments/assets/1294fa10-8aac-4d01-8516-3653e2464427" />
 
+---
+
 ### Step 3: Initialize Terraform
 - In the same directory where main.tf is saved, run: ```terraform init``` 
 <br><br>
 <img width="701" height="438" alt="Screenshot from 2025-08-07 13-19-33" src="https://github.com/user-attachments/assets/1e44a1ef-d95a-49ab-a30c-5f9810345aec" />
+
+---
 
 ### Step 4: Apply the Configuration (Start Container)
 - Now let’s actually provision the infrastructure.
 Run: ``terraform plan``
 <img width="1000" height="225" alt="Screenshot from 2025-08-07 13-21-04" src="https://github.com/user-attachments/assets/c8bd050c-1486-46eb-b5ca-61385fafaaf5" />
 <img width="1000" height="375" alt="Screenshot from 2025-08-07 13-21-23" src="https://github.com/user-attachments/assets/c9ee170b-81a1-490c-9fe4-de075548d7b4" />
+
+---
 
 ### Step 5: Apply the Configuration (Start Container)
 - Now let’s actually provision the infrastructure.
@@ -88,6 +96,8 @@ Do you want to perform these actions?
 
 <br>
 
+---
+
 ### Step 6: Check container is running: 
 ``docker ps``
 
@@ -106,6 +116,8 @@ Do you want to perform these actions?
 <img width="1000" height="212" alt="Screenshot from 2025-08-07 13-27-47" src="https://github.com/user-attachments/assets/2f95c25e-7560-44d2-ad09-8f41a66c75a1" />
 
 <br>
+
+---
 
 ### Step 7: Explore Terraform State
 - Terraform keeps track of all created resources using a file called *terraform.tfstate*.
@@ -131,6 +143,7 @@ sudo docker rm -f nginx_container
 ```
 <img width="708" height="50" alt="Screenshot from 2025-08-07 13-44-58" src="https://github.com/user-attachments/assets/8fad6fb3-adfc-4ce9-884e-bb3c224a4643" />
 
+---
 
 ### Step 8: Destroy the Infrastructure (Cleanup)
 - Terraform gives you full control — so let’s clean everything it created.
